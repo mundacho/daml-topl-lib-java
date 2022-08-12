@@ -1,0 +1,14 @@
+sdk-version: 2.3.2
+name: topl-daml-api
+source: daml
+init-script: Main:initialize
+version: 0.0.1
+dependencies:
+  - daml-prim
+  - daml-stdlib
+  - daml-script
+codegen:
+  java:
+    package-prefix: co.topl.daml.api.model
+    output-directory: target/generated-sources/topl
+    decoderClass: co.topl.daml.api.TemplateDecoder

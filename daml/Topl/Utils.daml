@@ -1,0 +1,11 @@
+module Topl.Utils where
+
+data SendStatus = New
+                | Pending
+                | Sent with
+                    when   : Time
+                    from   : Text
+                    txHash : Optional Text
+                | FailedToSend with
+                    reason : Text
+  deriving (Eq, Show)

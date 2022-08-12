@@ -1,0 +1,7 @@
+/.daml
+/log
+navigator.log
+target/
+.bloop/
+.metals/
+keyfile.json
